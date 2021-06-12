@@ -24,7 +24,7 @@ const products = [
   {
     '_id': '3',
     'name': 'Chicken Pot Pie',
-    'image': '/images/chicken-pot-pie.jpg',
+    'image': '/images/chicken-pot-pie.jpeg',
     'description':
       'Chicken Pot Pie',
     'category': 'savory',
