@@ -9,7 +9,7 @@ const Header = () => {
       <Navbar bg="dark" variant='dark' expand="lg" className='px-5'>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand className='nav'>Cheefa's Fried Pies</Navbar.Brand>
+            <Navbar.Brand className='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="navbarScroll" />

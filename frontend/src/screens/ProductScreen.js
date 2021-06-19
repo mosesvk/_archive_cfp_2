@@ -9,7 +9,11 @@ const ProductScreen = ({match}) => {
   return (
     <div>
       <Link to='/' className='btn btn-light my-3'>Back to Home</Link>
-      <p>{product.name}</p>
+      <Row>
+        <Col md={6}>
+          <Image src={product.image} alt={product.name}/>
+        </Col>
+      </Row>
     </div>
   )
 }
