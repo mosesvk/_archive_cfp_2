@@ -13,6 +13,8 @@ const ProductScreen = ({match}) => {
         <Col md={6}>
           <Image src={product.image} alt={product.name}/>
         </Col>
+        <Col md={3}></Col>
+        <Col md={3}></Col>
       </Row>
     </div>
   )
