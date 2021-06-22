@@ -53,6 +53,10 @@ $border-radius-sm:            .3rem !default;
 
 // Fonts
 
+// stylelint-disable-next-line value-keyword-case
+$headings-font-family:        Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$headings-color:              $gray-700 !default;
+
 // Tables
 
 $table-border-color:          rgba(0, 0, 0, .05) !default;
