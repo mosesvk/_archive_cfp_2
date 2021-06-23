@@ -1,3 +1,5 @@
+// We're not using this anymore. We've converted this to a python file in the backend and using axios calls to retrieve the info from ThemeProvider. 
+
 const products = [
   {
     '_id': '1',
