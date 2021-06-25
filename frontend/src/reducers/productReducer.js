@@ -17,6 +17,6 @@ export const productListReducers = (state = {products: []}, action) => {
 
     default: 
       return state
-  }
+  } 
 }
 
