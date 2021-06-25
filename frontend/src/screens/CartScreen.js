@@ -24,6 +24,10 @@ const CartScreen = ({match, location, history}) => {
     console.log('remove:', id)
   }
 
+  const checkoutHandler = () => {
+    history.push('/login?redirect=shipping')
+  }
+
 
   return (
     <Row>
@@ -50,7 +54,7 @@ const CartScreen = ({match, location, history}) => {
                       className='form-select'
                       as="select"
                       value={item.qty}
-                      onChange={(e) => dispatch(addToCart(item.product, e.target.value))}
+                      onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value)))}
                     >
                       {
                         [...Array(item.countInStock).keys()]
@@ -82,9 +86,20 @@ const CartScreen = ({match, location, history}) => {
         <Card>
           <ListGroup variant='flush'>
             <ListGroup.Item>
-              <h2>SubTotal ({cartItems.reduce(((acc, item) => acc + item.qty, 0))}) items</h2>
+              <h2>SubTotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
+              ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
             </ListGroup.Item>
           </ListGroup>
+          <ListGroup.Item>
+          <Button 
+            className="btn-block" 
+            type="button"
+            disabled={cartItems.length === 0}
+            onClick={checkoutHandler}
+            >
+            PROCEED TO CHECKOUT
+          </Button>
+          </ListGroup.Item>
         </Card>
       </Col>
     </Row>
