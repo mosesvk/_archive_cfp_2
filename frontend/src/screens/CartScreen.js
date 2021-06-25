@@ -20,6 +20,10 @@ const CartScreen = ({match, location, history}) => {
     }
   }, [dispatch, productId, qty])
 
+  const removeFromCartHandler = (id) => {
+    console.log('remove:', id)
+  }
+
 
   return (
     <Row>
@@ -62,7 +66,7 @@ const CartScreen = ({match, location, history}) => {
                     <Button
                       type='button'
                       variant='light'
-
+                      onClick={() => removeFromCartHandler(item.product)}
                     >
                       <i className='fas fa-trash'></i>
                     </Button>
@@ -74,8 +78,14 @@ const CartScreen = ({match, location, history}) => {
         )}
       </Col>
 
-      <Col md={8}>
-
+      <Col md={4}>
+        <Card>
+          <ListGroup variant='flush'>
+            <ListGroup.Item>
+              <h2>SubTotal ({cartItems.reduce(((acc, item) => acc + item.qty, 0))}) items</h2>
+            </ListGroup.Item>
+          </ListGroup>
+        </Card>
       </Col>
     </Row>
   )
