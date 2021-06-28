@@ -8,7 +8,6 @@ from django.contrib.auth.models import User
 from .models import Product
 from .products import products
 from .serializers import ProductSerializer, UserSerializer, UserSerializerWithToken
-
 # Where we handle the business logic 
 # Create your views here.
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -55,7 +54,7 @@ def getUserProfile(request):
   return Response(serializer.data)
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAdminUser])
 def getUsers(request): 
   users = User.objects.all()
   serializer = UserSerializer(users, many=True)
