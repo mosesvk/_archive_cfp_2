@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from .models import Product
 from .products import products
-from .serializer import ProductSerializer
+from .serializers import ProductSerializer, UserSerializer
 
 # Where we handle the business logic 
 # Create your views here.
@@ -41,6 +41,12 @@ def getRoutes(request):
     '/api/products/<update>/<id>/'
   ]
   return Response(routes)
+
+@api_view(['GET'])
+def getUserProfile(request): 
+  user = request.user
+  serializer = UserSerializer(user, many=False)
+  return Response(serializer.data)
 
 @api_view(['GET'])
 def getProducts(request): 
