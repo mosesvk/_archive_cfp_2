@@ -54,11 +54,16 @@ def getUserProfile(request):
   return Response(serializer.data)
 
 @api_view(['GET'])
+def getUsers(request): 
+  users = User.objects.all()
+  serializer = UserSerializer(users, many=True)
+  return Response(serializer.data)
+
+@api_view(['GET'])
 def getProducts(request): 
   products = Product.objects.all()
   serializer = ProductSerializer(products, many=True)
   return Response(serializer.data)
-
 
 @api_view(['GET'])
 def getProduct(request, pk):
