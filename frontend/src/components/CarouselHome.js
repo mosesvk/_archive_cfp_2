@@ -12,7 +12,7 @@ const CarouselHome = () => {
         />
         <Carousel.Caption>
           <h3>Savor the Taste</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>From Beef & Mushroom to Chicken Pot Pie, your taste buds will be taken care of</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -24,7 +24,7 @@ const CarouselHome = () => {
 
         <Carousel.Caption>
           <h3>'Aint nothin Sweeter</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Sweet tooth? No worries, these fried pies will be more than sufficient.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
