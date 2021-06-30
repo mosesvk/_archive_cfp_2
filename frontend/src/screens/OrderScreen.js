@@ -25,7 +25,7 @@ function OrderScreen({ match }) {
     }
 
     // client Id
-    //AY_xI5j5BE8sMhqpAqWsBQx0BJRP46pYrDQzSOgnRJh087I0jCV9GYYGFSY47EKp_BQflVIB31uXHYJH
+    //AUJddJB9ocTgtBWMmBFMx6xtLdK45E5DmdPo8Rmc3Mlu7VuauBE0Z71vicnVHHfsNcaV03CpWO9U1vDH
 
     const addPayPalScript = () => {
         const script = document.createElement('script')
@@ -39,7 +39,7 @@ function OrderScreen({ match }) {
     }
 
     useEffect(() => {
-        if (!order || order._id !== Number(orderId)){
+        if (!order || successPay || order._id !== Number(orderId)){
             dispatch({ type: ORDER_PAY_RESET })
             dispatch(getOrderDetails(orderId))
         } else if (!order.isPaid) {
