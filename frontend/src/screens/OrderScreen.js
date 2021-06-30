@@ -18,15 +18,15 @@ function OrderScreen({ match }) {
     }
 
     useEffect(() => {
-      if (!order || order._id !== Number(orderId)){
+        if (!order || order._id !== Number(orderId)){
         dispatch(getOrderDetails(orderId))
-      }
-    }, [order, orderId])
+        }
+    }, [dispatch, order, orderId])
 
     return loading ? (
-      <Loader/>
+        <Loader/>
     ) : error ? (
-      <Message variant='danger'>{error}</Message>
+        <Message variant='danger'>{error}</Message>
     ) : (
         <div>
             <h1>Order #: {order._id}</h1>
@@ -54,7 +54,7 @@ function OrderScreen({ match }) {
                                 {order.paymentMethod}
                             </p>
                             {order.isPaid ? (
-                              <Message variant='success'>Paid on {order.paidAt}</Message>
+                                <Message variant='success'>Paid on {order.paidAt}</Message>
                             ) : (
                                 <Message variant='warning'>Not Paid</Message>
                             )}
