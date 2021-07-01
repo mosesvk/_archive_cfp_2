@@ -73,7 +73,7 @@ export const userRegisterReducer = (state = {}, action) => {
         default:
             return state
     }
-    }
+}
 
 
 
@@ -158,7 +158,8 @@ export const userDeleteReducer = (state = {}, action) => {
 export const userUpdateReducer = (state = { user: {} }, action) => {
     switch (action.type) {
         case USER_UPDATE_REQUEST:
-            return { loading: true } 
+            return { loading: true }
+
         case USER_UPDATE_SUCCESS:
             return { loading: false, success: true }
 
