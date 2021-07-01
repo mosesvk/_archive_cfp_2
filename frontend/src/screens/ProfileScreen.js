@@ -8,6 +8,7 @@ import Message from '../components/Message'
 import {getUserDetails, updateUserProfile} from '../actions/userActions'
 import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
 import { listMyOrders } from '../actions/orderActions'
+import { orderDetailsReducer } from '../reducers/orderReducers'
 
 const ProfileScreen = ({history}) => {
   const [name, setName] = useState('')
@@ -148,7 +149,7 @@ const ProfileScreen = ({history}) => {
 
             <tbody>
               {orders.map(order => (
-                <tr>
+                <tr key={order._id}>
                   <td>{order._id}</td>
                   <td>{order.createdAt.substring(0, 10)}</td>
                   <td>${order.totalPrice}</td>

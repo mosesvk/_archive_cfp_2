@@ -18,7 +18,6 @@ const HomeScreen = () => {
 
   return (
     <div>
-      <CarouselHome />
 
       <div>
         <h1>This Week's Flavors</h1>
