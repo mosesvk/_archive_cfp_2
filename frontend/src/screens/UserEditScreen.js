@@ -6,7 +6,8 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 import FormContainer from '../components/FormContainer'
 
-import { getUserDetails } from '../actions/userActions'
+import { getUserDetails, updateUser } from '../actions/userActions'
+import { USER_UPDATE_RESET } from '../constants/userConstants'
 
 const EditUserScreen = ({match, history}) => {
 
@@ -20,17 +21,26 @@ const EditUserScreen = ({match, history}) => {
 
   const userDetails = useSelector(state => state.userDetails)
   const {error, loading, user} = userDetails
-  // This is grabbed from the userReducers file 
+
+  const userUpdate = useSelector(state => state.userUpdate)
+  const {error: errorUpdate, loading: loadingUpdate, success:successUpdate} = userUpdate
+  // This is grab bed from the userReducers file 
 
   useEffect(() => {
-    if(!user.name || user._id !== Number(userId)){
-      dispatch(getUserDetails(userId))
+
+    if (successUpdate){
+      dispatch({ type: USER_UPDATE_RESET })
+      history.push('/admin/userlist')
     } else {
-      setName(user.name)
-      setEmail(user.email)
-      setIsAdmin(user.isAdmin)
+      if(!user.name || user._id !== Number(userId)){
+        dispatch(getUserDetails(userId))
+      } else {
+        setName(user.name)
+        setEmail(user.email)
+        setIsAdmin(user.isAdmin)
+      }
     }
-  }, [userId, user])
+  }, [userId, user, successUpdate, history])
 
   const submitHandler = (e) => {
     e.preventDefault()
