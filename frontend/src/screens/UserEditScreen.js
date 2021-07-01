@@ -44,6 +44,7 @@ const EditUserScreen = ({match, history}) => {
 
   const submitHandler = (e) => {
     e.preventDefault()
+    dispatch(updateUser({_id: user._id, name, email, isAdmin}))
 
   }
 
@@ -53,6 +54,9 @@ const EditUserScreen = ({match, history}) => {
 
       <FormContainer>
         <h1>Edit User </h1>
+        {loadingUpdate && <Loader />}
+        {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
+
         {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
           <Form onSubmit={submitHandler}>
 
