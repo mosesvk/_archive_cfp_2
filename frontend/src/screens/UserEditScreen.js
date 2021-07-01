@@ -23,8 +23,14 @@ const EditUserScreen = ({match, history}) => {
   // This is grabbed from the userReducers file 
 
   useEffect(() => {
-  
-  }, [])
+    if(!user.name || user._id !== Number(userId)){
+      dispatch(getUserDetails(userId))
+    } else {
+      setName(user.name)
+      setEmail(user.email)
+      setIsAdmin(user.isAdmin)
+    }
+  }, [userId, user])
 
   const submitHandler = (e) => {
     e.preventDefault()
