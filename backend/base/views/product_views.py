@@ -54,11 +54,13 @@ def deleteProduct(request, pk):
   product.name = data['name']
   product.price = data['price']
   product.brand = data['brand']
-  product.name = data['countInStock']
-  product.name = data['name']
-  product.name = data['name']
+  product.countInStock = data['countInStock']
+  product.category = data['category']
+  product.description = data['description']
   
-  product.delete()  
+  product.save()  
+  
+  serializer = ProductSerializer(product, many=False)
   return Response('Product Deleted')
 
 
