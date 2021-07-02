@@ -6,6 +6,7 @@ urlpatterns = [
   
   path('create/', views.createProduct, name='product-create'),
   # Make sure the createProduct is above getProduct because it is one parameter and it will think it's a dynamic value 
+  path('upload/', views.uploadImage, name='product-upload'),
   path('<str:pk>', views.getProduct, name='product'),
   
   path('update/<str:pk>/', views.updateProduct, name='product-update'),
