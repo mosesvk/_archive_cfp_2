@@ -47,7 +47,7 @@ def getProduct(request, pk):
 
 @api_view(['PUT'])
 @permission_classes([IsAdminUser])
-def deleteProduct(request, pk):
+def updateProduct(request, pk):
   data = request.data
   product = Product.objects.get(_id=pk)
   
@@ -63,4 +63,9 @@ def deleteProduct(request, pk):
   serializer = ProductSerializer(product, many=False)
   return Response('Product Deleted')
 
-
+@api_view(['DELETE'])
+@permission_classes([IsAdminUser])
+def deleteProduct(request, pk):
+    product = Product.objects.get(_id=pk)
+    product.delete()
+    return Response('Product Deleted')
