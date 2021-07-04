@@ -16,7 +16,7 @@ function SearchBox() {
         }
     }
     return (
-        <Form onSubmit={submitHandler} >
+        <Form onSubmit={submitHandler} c>
             <Form.Control
                 type='text'
                 name='q'
