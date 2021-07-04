@@ -34,7 +34,7 @@ const Header = ({history}) => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <LinkContainer to='/cart'>
+              <LinkContainer to='/cart' className='mx-4'>
                 <Nav.Link ><i className='fas fa-shopping-cart'></i>Cart</Nav.Link>
               </LinkContainer>
 
