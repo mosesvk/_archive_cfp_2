@@ -27,7 +27,7 @@ function SearchBox() {
             <Button
                 type='submit'
                 variant='outline-success'
-                className='p-2'
+                className='p-2 mx-2'
             >
                 Submit
             </Button>
