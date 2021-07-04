@@ -10,6 +10,8 @@ font-size: 1.8rem;
 padding:1rem 0;
 }
 
+
+
 h2{
 font-size: 1.4rem;
 padding:0.5rem 0;
@@ -19,8 +21,18 @@ h3{
   padding:1rem 0;
 }
 
+.nav {
+
+  background-color: $secondary;
+}
+
 .nav-logo {
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Fugaz One'!important;
+  text-transform: lowercase;
+
+  @media (min-width: $laptop){
+    font-size: 3rem!important;
+  }
 }
 
 .search-box {
@@ -40,6 +52,10 @@ h3{
   button {
     margin: 0!important;
   }
+}
+
+.username-menu {
+  margin: 0!important;
 }
 
 .rating span{

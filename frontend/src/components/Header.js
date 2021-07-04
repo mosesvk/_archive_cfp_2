@@ -18,8 +18,8 @@ const Header = ({history}) => {
 
   return (
     <header>
-      <Navbar bg="dark" variant='dark' expand="lg" className='px-5'>
-        <Container>
+      <Navbar variant='dark' expand="lg" className='px-5 nav'>
+        <Container className='container'>
           <LinkContainer to="/">
             <Navbar.Brand className='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
           </LinkContainer>
@@ -32,12 +32,12 @@ const Header = ({history}) => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <LinkContainer to='/cart' className='mx-4'>
+              <LinkContainer to='/cart'>
                 <Nav.Link ><i className='fas fa-shopping-cart'></i>Cart</Nav.Link>
               </LinkContainer>
 
               {userInfo ? (
-                <NavDropdown title={userInfo.name} id='username'>
+                <NavDropdown title={`${userInfo.name}`} id='username' className='username-menu'>
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
@@ -76,7 +76,7 @@ const Header = ({history}) => {
               </NavDropdown>
 
               <SearchBox />
-              
+
             </Nav>
           </Navbar.Collapse>
         </Container>
