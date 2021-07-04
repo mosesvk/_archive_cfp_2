@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import './variables';
 
 main{
   min-height: 80vh;
@@ -20,6 +21,13 @@ h3{
 
 .nav-logo {
   font-family: 'Fugaz One', cursive;
+}
+
+.search-box {
+
+  @media (min-width: $laptop){
+    display: flex;
+  }
 }
 
 .rating span{
