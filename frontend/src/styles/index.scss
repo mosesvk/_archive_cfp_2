@@ -28,6 +28,18 @@ h3{
   @media (min-width: $laptop){
     display: flex;
   }
+
+  input {
+    margin: 5px 0;
+
+    @media (min-width: $laptop){
+      margin: 0 2px
+    }
+  }
+
+  button {
+    margin: 0!important;
+  }
 }
 
 .rating span{

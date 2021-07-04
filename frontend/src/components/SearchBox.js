@@ -22,6 +22,7 @@ function SearchBox() {
                 name='q'
                 onChange={(e) => setKeyword(e.target.value)}
                 className='mr-sm-1 ml-sm-5'
+                placeholder='Search...'
             ></Form.Control>
 
             <Button

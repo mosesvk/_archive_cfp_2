@@ -26,8 +26,6 @@ const Header = ({history}) => {
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-
-            <SearchBox />
             
             <Nav
               className="mr-auto my-2 my-lg-0"
@@ -44,6 +42,23 @@ const Header = ({history}) => {
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
 
+                  {userInfo && userInfo.isAdmin && (
+                    <NavDropdown title='Admin'>
+                      <LinkContainer to='/admin/userlist'>
+                        <NavDropdown.Item>Users</NavDropdown.Item>
+                      </LinkContainer>
+
+                      <LinkContainer to='/admin/productlist'>
+                        <NavDropdown.Item>Products</NavDropdown.Item>
+                      </LinkContainer>
+
+                      <LinkContainer to='/admin/orderlist'>
+                        <NavDropdown.Item>Orders</NavDropdown.Item>
+                      </LinkContainer>
+
+                    </NavDropdown>
+                  )}
+
                   <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
 
                 </NavDropdown>
@@ -52,30 +67,16 @@ const Header = ({history}) => {
                   <Nav.Link ><i className='fas fa-user'></i>Login</Nav.Link>
                 </LinkContainer>
               )}
-
-              {userInfo && userInfo.isAdmin && (
-                <NavDropdown title='Admin' id='adminmenu'>
-                  <LinkContainer to='/admin/userlist'>
-                    <NavDropdown.Item>Users</NavDropdown.Item>
-                  </LinkContainer>
-
-                  <LinkContainer to='/admin/productlist'>
-                    <NavDropdown.Item>Products</NavDropdown.Item>
-                  </LinkContainer>
-
-                  <LinkContainer to='/admin/orderlist'>
-                    <NavDropdown.Item>Orders</NavDropdown.Item>
-                  </LinkContainer>
-
-                </NavDropdown>
-              )}
             
-              <NavDropdown title="Pie Flavors" id="navbarScrollingDropdown">
+              <NavDropdown title="Menu" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Sweet Fried Pies</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Savory Fried Pies</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">Pizza Puffs</NavDropdown.Item>
               </NavDropdown>
+
+              <SearchBox />
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
