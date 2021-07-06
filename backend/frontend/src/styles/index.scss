@@ -30,22 +30,26 @@ h3{
   font-family: 'Fugaz One'!important;
   text-transform: lowercase;
 
-  @media (min-width: $laptop){
-    font-size: 3rem!important;
+
+  @media (min-width: 1000px){
+    font-size: 2.5rem!important;
   }
 }
 
 .search-box {
 
-  @media (min-width: $laptop){
+  @media (min-width: 1000px){
     display: flex;
+    height: 40px;
   }
 
   input {
     margin: 5px 0;
+    width: 180px;
 
-    @media (min-width: $laptop){
-      margin: 0 2px
+    @media (min-width: 1000px){
+      margin: 0 2px;
+      width: 200px;
     }
   }
 
@@ -53,6 +57,10 @@ h3{
     margin: 0!important;
     background-color: white;
   }
+}
+
+.navbar-collapse {
+  justify-content: space-between;
 }
 
 .username-menu {
