@@ -26,10 +26,12 @@ const Header = ({history}) => {
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            
+
+            <SearchBox />
             <Nav
-              className="mr-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
+              // className='ml-auto'
+              className="ml-auto my-2 my-lg-0"
+              // style={{ maxHeight: '100px' }}
               navbarScroll
             >
               <LinkContainer to='/cart'>
@@ -74,8 +76,6 @@ const Header = ({history}) => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">Pizza Puffs</NavDropdown.Item>
               </NavDropdown>
-
-              <SearchBox />
 
             </Nav>
           </Navbar.Collapse>
