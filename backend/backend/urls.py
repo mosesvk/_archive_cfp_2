@@ -1,7 +1,7 @@
 """backend URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -25,9 +25,8 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html')),
     path('api/products/', include('base.urls.product_urls')),
     path('api/users/', include('base.urls.user_urls')),
-    path('api/orders/', include('base.urls.order_urls'))
+    path('api/orders/', include('base.urls.order_urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

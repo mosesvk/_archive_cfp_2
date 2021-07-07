@@ -123,8 +123,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'CFP',
-        'USER': 'proshop',
+        'NAME': 'proshop',
+        'USER': 'postgres',
         'PASSWORD': 'solia7',
         'HOST': 'localhost',
         'PORT': '5432'

@@ -107,7 +107,7 @@ export const productCreateReducer = (state = {}, action) => {
         default:
             return state
     }
-    }
+}
 
 
 export const productUpdateReducer = (state = { product: {} }, action) => {
