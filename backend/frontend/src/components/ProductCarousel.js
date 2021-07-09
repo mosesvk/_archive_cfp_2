@@ -22,27 +22,11 @@ function ProductCarousel() {
             ? <Message variant='danger'>{error}</Message>
             : (
                 <Carousel className='bg-dark' fade>
-                    <Carousel.Item>
-                        <Link to='/'>
-                            <Image src={'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg'} alt='logo-img' fluid />
-                            <Carousel.Caption className='carousel.caption'>
-                                <h4>From the Kitchen to the Market. Click here to checkout the history of Cheefa's Fried Pies.</h4>
-                            </Carousel.Caption>
-                        </Link>
-                        {/* <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption> */}
-                    </Carousel.Item>
+
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        src="https://www.savoryspiceshop.com/content/mercury_modules/recipes/7/1/1/711/chocolate-puddin-filling-for-fried-pies-806.jpg"
                         alt="Second slide"
                         />
 
@@ -84,3 +68,21 @@ export default ProductCarousel
                         </Carousel.Item>
                     ))}
                 </Carousel> */
+
+            //     <Carousel.Item>
+            //     <Link to='/'>
+            //         <Image src={'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg'} alt='logo-img' fluid />
+            //         <Carousel.Caption className='carousel.caption'>
+            //             <h4>From the Kitchen to the Market. Click here to checkout the history of Cheefa's Fried Pies.</h4>
+            //         </Carousel.Caption>
+            //     </Link>
+            //     {/* <img
+            //     className="d-block w-100"
+            //     src="holder.js/800x400?text=First slide&bg=373940"
+            //     alt="First slide"
+            //     />
+            //     <Carousel.Caption>
+            //     <h3>First slide label</h3>
+            //     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            //     </Carousel.Caption> */}
+            // </Carousel.Item>
