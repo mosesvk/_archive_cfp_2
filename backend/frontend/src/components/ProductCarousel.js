@@ -23,9 +23,9 @@ function ProductCarousel() {
             : (
                 <Carousel className='bg-dark' fade>
 
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
+                    <Carousel.Item className='h-50 d-flex justify-content-center'>
+                        <Image
+                        className="d-block w-75"
                         src="https://www.savoryspiceshop.com/content/mercury_modules/recipes/7/1/1/711/chocolate-puddin-filling-for-fried-pies-806.jpg"
                         alt="Second slide"
                         />
@@ -35,7 +35,7 @@ function ProductCarousel() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src="holder.js/800x400?text=Third slide&bg=20232a"
@@ -46,7 +46,7 @@ function ProductCarousel() {
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                 </Carousel>
             )
 
