@@ -31,8 +31,8 @@ function ProductCarousel() {
                         />
 
                         <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3>Sweet Tooth?</h3>
+                            <p>Take a look at our selection of sweet fried pies</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* <Carousel.Item>
