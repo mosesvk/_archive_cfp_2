@@ -85,6 +85,7 @@ margin:0.1rem;
 
 .container {
   max-width: none!important;
+  padding: 0!important;
 }
 
 /* Products Admin */
@@ -96,7 +97,7 @@ margin:0.1rem;
 /* carousel */
 
 .carousel {
-  border-radius: 15px;
+  // border-radius: 15px;
 }
 
 .carousel-item-next,
