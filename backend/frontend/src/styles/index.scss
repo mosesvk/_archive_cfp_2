@@ -81,6 +81,12 @@ h3{
 margin:0.1rem;
 }
 
+/* Container */
+
+.container {
+  max-width: none!important;
+}
+
 /* Products Admin */
 
 .row > .text-right {
@@ -91,8 +97,6 @@ margin:0.1rem;
 
 .carousel {
   border-radius: 15px;
-  padding: 0;
-  margin: 0;
 }
 
 .carousel-item-next,
