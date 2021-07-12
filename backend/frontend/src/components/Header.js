@@ -44,7 +44,7 @@ const Header = ({history}) => {
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
 
-                  {userInfo && userInfo.isAdmin && (
+                  {/* {userInfo && userInfo.isAdmin && (
                     <NavDropdown title='Admin' variant='light' style={{color: 'black'}}>
                       <LinkContainer to='/admin/userlist'>
                         <NavDropdown.Item>Users</NavDropdown.Item>
@@ -59,7 +59,7 @@ const Header = ({history}) => {
                       </LinkContainer>
 
                     </NavDropdown>
-                  )}
+                  )} */}
 
                   <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
 
