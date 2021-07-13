@@ -109,12 +109,16 @@ display: flex;
 position: absolute;
 top: 0;
 letter-spacing: 0;
+font-family: 'Montserrat', sans-serif;
 
   h3 {
     color: white;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-size: 3rem;
   }
 }
 
