@@ -23,7 +23,7 @@ function ProductCarousel() {
             : (
                 <Carousel className='bg-dark' fade>
 
-                    <Carousel.Item className='h-50 d-flex justify-content-center carousel-sweet'>
+                    <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
                         <Image
                         className="d-block w-100"
                         src="https://www.savoryspiceshop.com/content/mercury_modules/recipes/7/1/1/711/chocolate-puddin-filling-for-fried-pies-806.jpg"
