@@ -21,7 +21,7 @@ function ProductCarousel() {
         : error
             ? <Message variant='danger'>{error}</Message>
             : (
-                <Carousel className='bg-dark' fade>
+                <Carousel className='bg-dark carousel-container' fade>
 
                     <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
                         <Image

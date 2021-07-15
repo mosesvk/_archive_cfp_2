@@ -96,6 +96,10 @@ margin:0.1rem;
 
 /* carousel */
 
+.carousel-container {
+  background-color: black!important;
+}
+
 .carousel-item {
   // border-radius: 15px;
   height: 550px;
@@ -113,20 +117,22 @@ letter-spacing: 0;
 font-family: 'Montserrat', sans-serif;
 
   h3 {
-    color: white;
-    font-size: 5rem;
-    font-size: 5.25rem;
+    color: $secondary;
+    font-size: 4rem;
     font-weight: 800;
   }
 
   p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
-// .carousel-sweet {
-//   background-image: url('https://www.savoryspiceshop.com/content/mercury_modules/recipes/7/1/1/711/chocolate-puddin-filling-for-fried-pies-806.jpg')!important;
-// }
+.carousel-sweet {
+
+  .d-block  {
+    opacity: .5;
+  }
+}
 
 .carousel-caption h4 {
 color: #fff;
