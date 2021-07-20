@@ -5,7 +5,6 @@ import { Carousel, Image } from 'react-bootstrap'
 import Loader from './Loader'
 import Message from './Message'
 import { listTopProducts } from '../actions/productActions'
-// import logoImg from '../../public/images/cfp-cover.jpg'
 
 function ProductCarousel() {
     const dispatch = useDispatch()
@@ -31,7 +30,7 @@ function ProductCarousel() {
                         />
 
                         <Carousel.Caption>
-                            <Image className='w-25' src='https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/117392708_148406646900885_2986494580076297624_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=2m10FQRIAUUAX_fKSVA&_nc_ht=scontent-den4-1.xx&oh=804516da55bb46e52d86bfe5eec749ef&oe=60F37F6E' style={{borderRadius:'50%'}}/>
+                            <Image className='w-25' src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/117392708_148406646900885_2986494580076297624_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=DNswBhgsJjMAX9NAFUo&_nc_ht=scontent-lax3-2.xx&oh=cbc219369c29dbdd832520d4c8c3828f&oe=60FB686E'} style={{borderRadius:'50%'}}/>
                             <button>Order Now</button>
                             <p>Take a look at our selection of sweet fried pies</p>
                         </Carousel.Caption>
