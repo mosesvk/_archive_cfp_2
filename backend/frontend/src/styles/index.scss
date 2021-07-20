@@ -97,7 +97,8 @@ margin:0.1rem;
 /* carousel */
 
 .carousel-container {
-  background-color: black!important;
+  background-color: #f8efefdc!important;
+  background-size: cover;
 }
 
 .carousel-item {
@@ -130,7 +131,7 @@ font-family: 'Montserrat', sans-serif;
 .carousel-sweet {
 
   .d-block  {
-    opacity: .5;
+    // opacity: .75;
   }
 }
 

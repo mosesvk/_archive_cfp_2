@@ -25,7 +25,7 @@ function ProductCarousel() {
                     <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
                         <Image
                         className="d-block w-100"
-                        src="https://www.savoryspiceshop.com/content/mercury_modules/recipes/7/1/1/711/chocolate-puddin-filling-for-fried-pies-806.jpg"
+                        src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/117607715_148405643567652_8532818459016486806_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=e3f864&_nc_ohc=EkTxLPQv4a0AX_7QGYL&_nc_ht=scontent-lax3-2.xx&oh=90dabf0d7c0f02ab8e563492ffdf160b&oe=60FB79EA"
                         alt="Second slide"
                         />
 
@@ -35,7 +35,7 @@ function ProductCarousel() {
                             <p>Take a look at our selection of sweet fried pies</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src="holder.js/800x400?text=Third slide&bg=20232a"
@@ -46,7 +46,7 @@ function ProductCarousel() {
 
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                 </Carousel>
             )
 
