@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { Carousel, Image } from 'react-bootstrap'
+import { Carousel, Image, Button } from 'react-bootstrap'
 import Loader from './Loader'
 import Message from './Message'
 import { listTopProducts } from '../actions/productActions'
@@ -29,9 +29,9 @@ function ProductCarousel() {
                         alt="Second slide"
                         />
 
-                        <Carousel.Caption>
+                        <Carousel.Caption className='d-flex align-items-center carousel-caption'>
                             <Image className='w-25' src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/117392708_148406646900885_2986494580076297624_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=DNswBhgsJjMAX9NAFUo&_nc_ht=scontent-lax3-2.xx&oh=cbc219369c29dbdd832520d4c8c3828f&oe=60FB686E'} style={{borderRadius:'50%'}}/>
-                            <button>Order Now</button>
+                            <Button variant='outline-success'>Order Now</Button>
                             <p>Take a look at our selection of sweet fried pies</p>
                         </Carousel.Caption>
                     </Carousel.Item>
