@@ -133,6 +133,10 @@ font-family: 'Montserrat', sans-serif;
   .d-block  {
     // opacity: .75;
   }
+
+  .carousel-caption {
+    flex-direction: column;
+  }
 }
 
 .carousel-caption h4 {
