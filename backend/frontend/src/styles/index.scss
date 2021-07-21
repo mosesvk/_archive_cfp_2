@@ -104,6 +104,14 @@ margin:0.1rem;
 .carousel-item {
   // border-radius: 15px;
   height: 550px;
+
+  .carousel-caption {
+    
+
+    h4 {
+      color: #fff;
+    }
+  }
 }
 
 .carousel-item-next,
@@ -137,11 +145,6 @@ font-family: 'Montserrat', sans-serif;
   .carousel-caption {
     flex-direction: column;
   }
-}
-
-.carousel-caption h4 {
-color: #fff;
-// color: black;
 }
 
 .carousel a {
