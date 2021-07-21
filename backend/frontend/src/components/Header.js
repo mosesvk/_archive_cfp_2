@@ -18,7 +18,7 @@ const Header = ({history}) => {
 
   return (
     <header>
-      <Navbar variant='light' expand="lg" className='px-5 nav'>
+      <Navbar variant='dark' expand="lg" className='px-5 nav'>
         <Container className='container'>
           <LinkContainer to="/">
             <Navbar.Brand className='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
