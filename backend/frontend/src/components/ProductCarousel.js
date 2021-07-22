@@ -25,9 +25,8 @@ function ProductCarousel() {
                     <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
 
                         <Carousel.Caption className='d-flex align-items-center carousel-caption'>
-                            <Image className='w-25' src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/117392708_148406646900885_2986494580076297624_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=DNswBhgsJjMAX9NAFUo&_nc_ht=scontent-lax3-2.xx&oh=cbc219369c29dbdd832520d4c8c3828f&oe=60FB686E'} style={{borderRadius:'50%'}}/>
-                            <Button variant='outline-success'>Order Now</Button>
-                            <p>Take a look at our selection of sweet fried pies</p>
+                            <Image className='logo-img' src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/117392708_148406646900885_2986494580076297624_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=DNswBhgsJjMAX9NAFUo&_nc_ht=scontent-lax3-2.xx&oh=cbc219369c29dbdd832520d4c8c3828f&oe=60FB686E'} style={{borderRadius:'50%'}}/>
+                            <Button variant='outline-dark'>Check it Out</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* <Carousel.Item>
