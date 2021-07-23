@@ -25,7 +25,7 @@ function HomeScreen({ history }) {
         <div>
             {!keyword && <ProductCarousel />}
 
-            <h1 style={{textAlign:'center'}}>Products On Display</h1>
+            <h1 style={{textAlign:'center'}}>Latest Products</h1>
             {loading ? <Loader />
                 : error ? <Message variant='danger'>{error}</Message>
                     :
