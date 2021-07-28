@@ -5,8 +5,25 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-from base.models import Product, Review
+from base.models import Display
 from base.serializers import ProductSerializer
 
 from rest_framework import status
 
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def createDisplay(request):
+    user = request.user
+
+    display = Display.objects.create(
+        user=user,
+        name='Sample Name',
+        price=0,
+        brand='Sample Brand',
+        countInStock=0,
+        category='Sample Category',
+        description=''
+    )
+
+    serializer = DisplaySerializer(display, many=False)
+    return Response(serializer.data)
