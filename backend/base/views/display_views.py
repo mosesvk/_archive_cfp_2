@@ -18,7 +18,6 @@ def createDisplay(request):
     display = Display.objects.create(
         user=user,
         name='Sample Name',
-        price=0,
         brand='Sample Brand',
         countInStock=0,
         category='Sample Category',
