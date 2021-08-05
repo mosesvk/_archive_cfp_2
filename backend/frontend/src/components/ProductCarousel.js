@@ -26,6 +26,8 @@ function ProductCarousel() {
                         displays.map(display => (
                             <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
                                 <Carousel.Caption className='d-flex align-items-center carousel-caption'>
+                                    <Image 
+                                        src={display.img} className="d-block w-100"/>
                                     
                                 </Carousel.Caption>
 
