@@ -29,8 +29,6 @@ export const displayListReducer = (state = { displays: [] }, action) => {
           return {
               loading: false,
               displays: action.payload.displays,
-              page: action.payload.page,
-              pages: action.payload.pages
           }
 
       case DISPLAY_LIST_FAIL:

@@ -3,7 +3,7 @@ from base.views import display_views as views
 
 urlpatterns = [
 
-    # path('', views.getDisplay, name="Displays"),
+    path('', views.getDisplays, name="displays"),
 
     path('create/', views.createDisplay, name="display-create"),
     # path('upload/', views.uploadImage, name="image-upload"),
