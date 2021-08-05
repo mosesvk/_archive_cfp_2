@@ -6,15 +6,17 @@ import Loader from './Loader'
 import Message from './Message'
 import { listDisplays } from '../actions/displayActions'
 
-function ProductCarousel() {
+function ProductCarousel({ history }) {
     const dispatch = useDispatch()
 
     const displayList = useSelector(state => state.displayList)
     const { error, loading, displays } = displayList
 
+    let keyword = history.location.search
+
     useEffect(() => {
-        dispatch(listDisplays())
-    }, [dispatch])
+        dispatch(listDisplays(keyword))
+    }, [dispatch, keyword])
 
     return (
         loading ? <Loader />
