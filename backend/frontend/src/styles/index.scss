@@ -137,7 +137,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .carousel-sweet {
-
+  background-image: url('../images/CFP-cover.jpg');
+  background-size: cover;
+  
   .d-block  {
     // opacity: .75;
   }

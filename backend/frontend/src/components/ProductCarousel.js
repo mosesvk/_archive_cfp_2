@@ -21,7 +21,8 @@ function ProductCarousel() {
     return (
         <Carousel className='bg-dark carousel-container' fade>
             <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
-                <Carousel.Caption className='d-flex align-items-center carousel-caption'>
+                <Carousel.Caption className='d-flex align-items-center carousel-caption' fluid>
+                    <Image src='../images/cfp-cover-1.png' alt='logo-img' fluid />
                     <Button variant='outline-dark'>Check it Out</Button>
                 </Carousel.Caption>
             </Carousel.Item>
