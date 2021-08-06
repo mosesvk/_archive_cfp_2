@@ -21,8 +21,9 @@ function ProductCarousel() {
     return (
         <Carousel className='bg-dark carousel-container' fade>
             <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
-
-                <Button variant='outline-dark'>Check it Out</Button>
+                <Carousel.Caption className='d-flex align-items-center carousel-caption'>
+                    <Button variant='outline-dark'>Check it Out</Button>
+                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     )
