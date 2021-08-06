@@ -64,7 +64,7 @@ function ProfileScreen({ history }) {
 
     }
     return (
-        <Row>
+        <Row className='m-5'>
             <Col md={3}>
                 <h2>User Profile</h2>
 
