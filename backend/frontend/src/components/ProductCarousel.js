@@ -4,40 +4,27 @@ import { Link } from 'react-router-dom'
 import { Carousel, Image, Button } from 'react-bootstrap'
 import Loader from './Loader'
 import Message from './Message'
-import { listDisplays } from '../actions/displayActions'
+// import { listDisplays } from '../actions/displayActions'
 
-function ProductCarousel({ history }) {
-    const dispatch = useDispatch()
+function ProductCarousel() {
+    // const dispatch = useDispatch()
 
-    const displayList = useSelector(state => state.displayList)
-    const { error, loading, displays } = displayList
+    // const displayList = useSelector(state => state.displayList)
+    // const { error, loading, displays } = displayList
 
-    let keyword = history.location.search
+    // let keyword = history.location.search
 
-    useEffect(() => {
-        dispatch(listDisplays(keyword))
-    }, [dispatch, keyword])
+    // useEffect(() => {
+    //     dispatch(listDisplays(keyword))
+    // }, [dispatch, keyword])
 
     return (
-        loading ? <Loader />
-        : error
-            ? <Message variant='danger'>{error}</Message>
-            : (
-                <Carousel pause='hover' className='-dark' fade>
-                    {
-                        displays.map(display => (
-                            <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
-                                <Carousel.Caption className='d-flex align-items-center carousel-caption'>
-                                    <Image 
-                                        src={display.img} className="d-block w-100"/>
-                                    
-                                </Carousel.Caption>
+        <Carousel className='bg-dark carousel-container' fade>
+            <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
 
-                            </Carousel.Item>
-                        ))
-                    }
-                </Carousel>
-            )
+                <Button variant='outline-dark'>Check it Out</Button>
+            </Carousel.Item>
+        </Carousel>
     )
 }
 
