@@ -139,17 +139,14 @@ font-family: 'Montserrat', sans-serif;
 .carousel-sweet {
   background-image: url('../images/CFP-cover.jpg');
   background-size: cover;
-  
-  .d-block  {
-    // opacity: .75;
-  }
 
   .carousel-caption {
     flex-direction: column;
 
     .logo-img {
-      width: 100%;
-
+      width: 40%;
+      border-radius: 50%;
+      
       @media (min-width: 700px){
         width: 70%;
       }
