@@ -21,11 +21,11 @@ import{
   DISPLAY_UPDATE_FAIL
 } from '../constants/displayConstants'
 
-export const listDisplays = (keyword = '') => async (dispatch) => {
+export const listDisplays = () => async (dispatch, getState) => {
   try {
       dispatch({ type: DISPLAY_LIST_REQUEST })
 
-      const { data } = await axios.get(`/api/displays${keyword}`)
+      const { data } = await axios.get(`/api/displays/`)
 
       dispatch({
           type: DISPLAY_LIST_SUCCESS,
