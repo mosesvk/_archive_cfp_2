@@ -92,10 +92,16 @@ margin:0.1rem;
   }
 }
 
-/* Products Admin */
+/* Cart */
 
-.row > .text-right {
-  text-align: end;
+.cart-row {
+
+  .cart-col {
+
+    h1 {
+      padding: 1rem!important;
+    }
+  }
 }
 
 /* carousel */
@@ -159,14 +165,15 @@ font-family: 'Montserrat', sans-serif;
       }
     }
 
-    button {
-      background-color: #ffbebf;
+    .btn-sweet {
+      background-color: #ffbebf!important;
+      border: #ffbebf!important;
       color: black;
-      margin: 5px;
-      :hover {
+      &:hover {
         background-color: #ffa1a2!important;
       }
     }
+
   }
 }
 

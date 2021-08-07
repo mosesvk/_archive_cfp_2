@@ -30,8 +30,8 @@ const CartScreen = ({match, location, history}) => {
 
 
   return (
-    <Row>
-      <Col md={8}>
+    <Row className='cart-row'>
+      <Col md={8} className='cart-col'>
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <Message>
