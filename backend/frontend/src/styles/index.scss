@@ -154,8 +154,9 @@ font-family: 'Montserrat', sans-serif;
     flex-direction: column;
 
     .logo-img {
-      width: 40%;
+      width: 100%;
       border-radius: 50%;
+      opacity: .9;
       
       @media (min-width: 700px){
         width: 70%;
@@ -169,6 +170,7 @@ font-family: 'Montserrat', sans-serif;
       background-color: #ffbebf!important;
       border: #ffbebf!important;
       color: black;
+      opacity: .9;
       &:hover {
         background-color: #ffa1a2!important;
       }
