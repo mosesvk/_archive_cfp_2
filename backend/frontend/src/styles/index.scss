@@ -193,13 +193,61 @@ font-family: 'Montserrat', sans-serif;
   }
 }
 
-.carousel a {
-margin: 0 auto;
+.carousel-pizza {
+  background-image: url('../images/CFP-counter.jpg');
+  background-size: cover;
+  height: 70vh!important;
+
+  .carousel-caption {
+    flex-direction: column;
+
+    .logo-img {
+      width: 100%;
+      border-radius: 50%;
+      opacity: .9;
+      
+      @media (min-width: 700px){
+        width: 70%;
+      }
+      @media (min-width: 1000px){
+        width: 50%;
+      }
+      @media (min-width: 1350px){
+        width: 45%
+      }
+      @media (min-width: 1500px){
+        width: 35%
+      }
+    }
+
+    h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding: 0;
+    }
+
+    .btn-pizza {
+      background-color: #ffbebf!important;
+      border: #ffbebf!important;
+      color: black;
+      opacity: .9;
+      &:hover {
+        background-color: #ffa1a2!important;
+      }
+    }
+  }
 }
-@media (max-width: 900px) {
-.carousel-caption h2 {
-  font-size: 2.5vw;
-}
-}
+
+
+
+// .carousel a {
+// margin: 0 auto;
+// }
+// @media (max-width: 900px) {
+// .carousel-caption h2 {
+//   font-size: 2.5vw;
+// }
+// }
 
 

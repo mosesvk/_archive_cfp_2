@@ -27,6 +27,14 @@ function ProductCarousel() {
                     <Button className='btn-sweet' variant="primary">Check it Out</Button>
                 </Carousel.Caption>
             </Carousel.Item>
+
+            <Carousel.Item className='d-flex justify-content-center carousel-pizza'>
+                <Carousel.Caption className='d-flex align-items-center carousel-caption' fluid>
+                    <Image className='logo-img' src='../images/cfp-cover-1.png' alt='logo-img' fluid />
+                    <h1>Try Our New Pizza Puffs</h1>
+                    <Button className='btn-pizza' variant="primary">Check it Out</Button>
+                </Carousel.Caption>
+            </Carousel.Item>
         </Carousel>
     )
 }
