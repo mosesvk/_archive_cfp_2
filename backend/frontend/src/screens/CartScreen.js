@@ -48,7 +48,7 @@ const CartScreen = ({match, location, history}) => {
                   <Col md={3}>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
-                  <Col md={2}>${item.price}</Col>
+                  <Col md={2}>${item.price} each</Col>
                   <Col md={3}>
                     <Form.Control
                       className='form-select'
