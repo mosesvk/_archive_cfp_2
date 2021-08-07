@@ -158,6 +158,15 @@ font-family: 'Montserrat', sans-serif;
         width: 30%;
       }
     }
+
+    button {
+      background-color: #ffbebf;
+      color: black;
+      margin: 5px;
+      :hover {
+        background-color: #ffa1a2!important;
+      }
+    }
   }
 }
 

@@ -23,7 +23,7 @@ function ProductCarousel() {
             <Carousel.Item className='h-30 d-flex justify-content-center carousel-sweet'>
                 <Carousel.Caption className='d-flex align-items-center carousel-caption' fluid>
                     <Image className='logo-img' src='../images/cfp-cover-1.png' alt='logo-img' fluid />
-                    <Button variant='outline-dark'>Check it Out</Button>
+                    <button className='' variant="primary">Check it Out</button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
