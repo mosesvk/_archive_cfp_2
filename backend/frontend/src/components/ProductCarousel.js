@@ -4,19 +4,9 @@ import { Link } from 'react-router-dom'
 import { Carousel, Image, Button } from 'react-bootstrap'
 import Loader from './Loader'
 import Message from './Message'
-// import { listDisplays } from '../actions/displayActions'
 
 function ProductCarousel() {
-    // const dispatch = useDispatch()
 
-    // const displayList = useSelector(state => state.displayList)
-    // const { error, loading, displays } = displayList
-
-    // let keyword = history.location.search
-
-    // useEffect(() => {
-    //     dispatch(listDisplays(keyword))
-    // }, [dispatch, keyword])
 
     return (
         <Carousel className='bg-dark carousel-container' fade>
