@@ -1,12 +1,12 @@
 import React from 'react'
-import { Image } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
 import logoImg from '../images/cfp-cover-1.png'
 
 const Sweet = () => {
   return (
-    <div>
-      <Image src={logoImg}/>
-    </div>
+    <Container className='sweet-container'>
+      <Image src={logoImg} className='logo-img'/>
+    </Container>
   )
 }
 

@@ -71,7 +71,7 @@ const Header = ({history}) => {
               )}
             
               <NavDropdown title="Menu" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Sweet flavors</NavDropdown.Item>
+                <NavDropdown.Item href='#sweetflavors'>Sweet flavors</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Savory flavors</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">Pizza Puffs</NavDropdown.Item>
