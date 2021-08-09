@@ -6,8 +6,6 @@ import Loader from './Loader'
 import Message from './Message'
 
 function ProductCarousel() {
-
-
     return (
         <Carousel className='bg-dark carousel-container' fade>
             <Carousel.Item className='d-flex justify-content-center carousel-sweet'>
