@@ -3,6 +3,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Sweet from './components/Sweet'
+import Savory from './components/Savory'
 
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
@@ -38,6 +39,7 @@ function App() {
           <Route path='/product/:id' component={ProductScreen} />
           <Route path='/cart/:id?' component={CartScreen} />
           <Route path='/sweetflavors' component={Sweet}/>
+          <Route path='/savoryflavors' component={Savory}/>
 
           <Route path='/admin/userlist' component={UserListScreen} />
           <Route path='/admin/user/:id/edit' component={UserEditScreen} />
