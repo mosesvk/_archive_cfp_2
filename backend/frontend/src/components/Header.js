@@ -18,7 +18,11 @@ const Header = ({history}) => {
 
   return (
     <header>
-      <Navbar variant='dark' expand="lg" className='px-5 nav'>
+      <Navbar 
+        variant='dark' 
+        expand="lg" 
+        className='px-5 nav'
+      >
         <Container className='container'>
           <LinkContainer to="/">
             <Navbar.Brand className='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
@@ -39,7 +43,11 @@ const Header = ({history}) => {
               </LinkContainer>
 
               {userInfo ? (
-                <NavDropdown title={`${userInfo.name}`} id='username' className='username-menu'>
+                <NavDropdown 
+                  title={`${userInfo.name}`} 
+                  id='username' 
+                  className='username-menu'
+                >
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
@@ -57,7 +65,7 @@ const Header = ({history}) => {
                 <NavDropdown.Item href='#sweetflavors'>Sweet flavors</NavDropdown.Item>
                 <NavDropdown.Item href="#savoryflavors">Savory flavors</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">Pizza Puffs</NavDropdown.Item>
+                <NavDropdown.Item href="#pizza">Pizza Puffs</NavDropdown.Item>
               </NavDropdown>
 
             </Nav>
