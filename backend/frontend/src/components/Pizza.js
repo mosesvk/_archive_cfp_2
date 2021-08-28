@@ -11,6 +11,7 @@ const Pizza = () => {
         </Col>
         <Col md={3}>
           <h1>Pizza Puffs</h1>
+          <p>Try our new Fried Pizza Puffs</p>
         </Col>
       </Row>
     </Container>
