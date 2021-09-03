@@ -11,6 +11,7 @@ const Savory = () => {
         </Col>
         <Col md={3}>
           <h1>Savory Flavors</h1>
+          <p>Try our Savory Fried Pies</p>
         </Col>
       </Row>
     </Container>
