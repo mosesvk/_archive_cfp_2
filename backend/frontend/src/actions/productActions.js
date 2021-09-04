@@ -24,11 +24,21 @@ import {
     PRODUCT_CREATE_REVIEW_SUCCESS,
     PRODUCT_CREATE_REVIEW_FAIL,
 
-
     PRODUCT_TOP_REQUEST,
     PRODUCT_TOP_SUCCESS,
     PRODUCT_TOP_FAIL,
 
+    PRODUCT_SWEET_REQUEST,
+    PRODUCT_SWEET_SUCCESS,
+    PRODUCT_SWEET_FAIL,
+
+    PRODUCT_SAVORY_REQUEST,
+    PRODUCT_SAVORY_SUCCESS,
+    PRODUCT_SAVORY_FAIL,
+
+    PRODUCT_PIZZA_REQUEST,
+    PRODUCT_PIZZA_SUCCESS,
+    PRODUCT_PIZZA_FAIL,
 } from '../constants/productConstants'
 
 
@@ -74,6 +84,68 @@ export const listTopProducts = () => async (dispatch) => {
     }
 }
 
+export const listSweetProducts = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_SWEET_REQUEST })
+
+        const { data } = await axios.get(`/api/products/sweet/`)
+
+        dispatch({
+            type: PRODUCT_SWEET_SUCCESS,
+            payload: data
+        })
+
+    } catch (error) {
+        dispatch({
+            type: PRODUCT_SWEET_FAIL,
+            payload: error.response && error.response.data.detail
+                ? error.response.data.detail
+                : error.message,
+        })
+    }
+}
+
+export const listSavoryProducts = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_SAVORY_REQUEST })
+
+        const { data } = await axios.get(`/api/products/savory/`)
+
+        dispatch({
+            type: PRODUCT_SAVORY_SUCCESS,
+            payload: data
+        })
+
+    } catch (error) {
+        dispatch({
+            type: PRODUCT_SAVORY_FAIL,
+            payload: error.response && error.response.data.detail
+                ? error.response.data.detail
+                : error.message,
+        })
+    }
+}
+
+export const listPizzaProducts = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_PIZZA_REQUEST })
+
+        const { data } = await axios.get(`/api/products/pizza/`)
+
+        dispatch({
+            type: PRODUCT_PIZZA_SUCCESS,
+            payload: data
+        })
+
+    } catch (error) {
+        dispatch({
+            type: PRODUCT_PIZZA_FAIL,
+            payload: error.response && error.response.data.detail
+                ? error.response.data.detail
+                : error.message,
+        })
+    }
+}
 
 export const listProductDetails = (id) => async (dispatch) => {
     try {
