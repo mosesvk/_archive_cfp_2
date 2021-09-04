@@ -6,7 +6,7 @@ import logoImg from '../images/cfp-cover-1.png'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
-import { listProducts } from '../actions/productActions'
+import { listSweetProducts } from '../actions/productActions'
 
 const Sweet = ({ history }) => {
 
@@ -18,8 +18,7 @@ const Sweet = ({ history }) => {
   let keyword = history.location.search
 
   useEffect(() => {
-      dispatch(listProducts(keyword))
-
+      dispatch(listSweetProducts(keyword))
   }, [dispatch, keyword])
 
   let sweetProducts = () => {
