@@ -29,6 +29,18 @@ import {
     PRODUCT_TOP_REQUEST,
     PRODUCT_TOP_SUCCESS,
     PRODUCT_TOP_FAIL,
+
+    PRODUCT_SWEET_REQUEST,
+    PRODUCT_SWEET_SUCCESS,
+    PRODUCT_SWEET_FAIL,
+
+    PRODUCT_SAVORY_REQUEST,
+    PRODUCT_SAVORY_SUCCESS,
+    PRODUCT_SAVORY_FAIL,
+
+    PRODUCT_PIZZA_REQUEST,
+    PRODUCT_PIZZA_SUCCESS,
+    PRODUCT_PIZZA_FAIL,
 } from '../constants/productConstants'
 
 
@@ -167,3 +179,50 @@ export const productTopRatedReducer = (state = { products: [] }, action) => {
     }
 }
 
+export const productSweetReducer = (state = { products: [] }, action) => {
+    switch (action.type) {
+        case PRODUCT_SWEET_REQUEST:
+            return { loading: true, products: [] }
+
+        case PRODUCT_SWEET_SUCCESS:
+            return { loading: false, products: action.payload, }
+
+        case PRODUCT_SWEET_FAIL:
+            return { loading: false, error: action.payload }
+
+        default:
+            return state
+    }
+}
+
+export const productSavoryReducer = (state = { products: [] }, action) => {
+    switch (action.type) {
+        case PRODUCT_SAVORY_REQUEST:
+            return { loading: true, products: [] }
+
+        case PRODUCT_SAVORY_SUCCESS:
+            return { loading: false, products: action.payload, }
+
+        case PRODUCT_SAVORY_FAIL:
+            return { loading: false, error: action.payload }
+
+        default:
+            return state
+    }
+}
+
+export const productPizzaReducer = (state = { products: [] }, action) => {
+    switch (action.type) {
+        case PRODUCT_PIZZA_REQUEST:
+            return { loading: true, products: [] }
+
+        case PRODUCT_PIZZA_SUCCESS:
+            return { loading: false, products: action.payload, }
+
+        case PRODUCT_PIZZA_FAIL:
+            return { loading: false, error: action.payload }
+
+        default:
+            return state
+    }
+}
