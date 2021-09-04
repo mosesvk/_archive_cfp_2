@@ -45,6 +45,23 @@ def getTopProducts(request):
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
 
+@api_view(['GET'])
+def getSweetProducts(request):
+    products = Product.objects.filter(category='sweet')
+    serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getSavoryProducts(request):
+    products = Product.objects.filter(category='savory')
+    serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getPizzaProducts(request):
+    products = Product.objects.filter(category='pizza')
+    serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data)
 
 @api_view(['GET'])
 def getProduct(request, pk):
