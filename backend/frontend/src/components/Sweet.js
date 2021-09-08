@@ -52,9 +52,6 @@ const Sweet = ({ history }) => {
                     </div>
             }
 
-      {sweetProducts}
-
-
     </Container>
   )
 }
