@@ -6,7 +6,7 @@ import logoImg from '../images/cfp-cover-1.png'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
-import { listSweetProducts } from '../actions/productActions'
+import { listProducts } from '../actions/productActions'
 
 const Sweet = ({ history }) => {
 
@@ -18,10 +18,10 @@ const Sweet = ({ history }) => {
   let keyword = history.location.search
 
   useEffect(() => {
-      dispatch(listSweetProducts(keyword))
+      dispatch(listProducts(keyword))
   }, [dispatch, keyword])
 
-  let sweetProducts = () => {
+  let Products = () => {
     products.map(product => product.category === 'sweet')
     console.log('hit sweetProducts function')
   }
@@ -42,7 +42,7 @@ const Sweet = ({ history }) => {
                     :
                     <div>
                         <Row>
-                            {products.map(product => (
+                            {products.filter(product => product.category = 'sweet').map(product => (
                                 <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                                     <Product product={product} />
                                 </Col>
@@ -50,7 +50,9 @@ const Sweet = ({ history }) => {
                         </Row>
                         <Paginate page={page} pages={pages} keyword={keyword} />
                     </div>
-            }
+      }
+
+      {Products}
 
     </Container>
   )
