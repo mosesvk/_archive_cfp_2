@@ -7,7 +7,7 @@ import Message from '../components/Message'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import { listProducts } from '../actions/productActions'
-console.log('hit')
+
 function HomeScreen({ history }) {
     const dispatch = useDispatch()
 
