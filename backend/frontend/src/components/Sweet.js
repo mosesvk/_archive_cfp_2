@@ -33,7 +33,7 @@ const Sweet = ({ history }) => {
           <Image src={logoImg} className='logo-img'/>
         </Col>
         <Col md={6}>
-          <h1>Sweet Flavors</h1>
+          <h1>Sweet Flavorssss</h1>
         </Col>
       </Row>
 
