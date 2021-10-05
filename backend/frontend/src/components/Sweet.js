@@ -21,10 +21,7 @@ const Sweet = ({ history }) => {
       dispatch(listProducts(keyword))
   }, [dispatch, keyword])
 
-  let Products = () => {
-    products.map(product => product.category === 'sweet')
-    console.log('hit sweetProducts function')
-  }
+  let sweetProducts = products.filter(elem => elem.category == 'sweet')
 
   return (
     <Container className='sweet-container'>
@@ -42,8 +39,8 @@ const Sweet = ({ history }) => {
                     :
                     <div>
                         <Row>
-                            {products.filter(product => product.category = 'sweet').map(product => (
-                                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                            {sweetProducts.map(product => (
+                              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                                     <Product product={product} />
                                 </Col>
                             ))}
@@ -51,7 +48,6 @@ const Sweet = ({ history }) => {
                         <Paginate page={page} pages={pages} keyword={keyword} />
                     </div>
       }
-
     </Container>
   )
 }
