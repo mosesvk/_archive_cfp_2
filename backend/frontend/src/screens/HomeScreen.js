@@ -29,8 +29,8 @@ function HomeScreen({ history }) {
             {loading ? <Loader />
                 : error ? <Message variant='danger'>{error}</Message>
                     :
-                    <div className='home-screen-row'>
-                        <Row>
+                    <div>
+                        <Row className='home-screen-row'>
                             {products.map(product => (
                                 <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                                     <Product product={product} />
