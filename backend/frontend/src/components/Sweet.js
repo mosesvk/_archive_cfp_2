@@ -26,9 +26,9 @@ const Sweet = ({ history }) => {
   return (
     <Container className='sweet-container'>
       <Row>
-        <Col md={4}>
+        {/* <Col md={4}>
           <Image src={logoImg} className='logo-img'/>
-        </Col>
+        </Col> */}
         <Col md={6}>
           <h1>Sweet Flavors</h1>
         </Col>
@@ -38,7 +38,7 @@ const Sweet = ({ history }) => {
                 : error ? <Message variant='danger'>{error}</Message>
                     :
                     <div>
-                        <Row className='home-screen-row'>
+                        <Row className='justify-center'>
                             {sweetProducts.map(product => (
                               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                                     <Product product={product} />

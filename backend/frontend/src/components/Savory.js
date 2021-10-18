@@ -25,10 +25,10 @@ const Savory = ({history}) => {
 
   return (
     <Container className='savory-container'>
-      <Row>
-        <Col md={4}>
+      <Row className='justify-center'>
+        {/* <Col md={4}>
           <Image src={logoImg} className='logo-img'/>
-        </Col>
+        </Col> */}
         <Col md={3}>
           <h1>Savory Flavors</h1>
           <p>Try our Savory Fried Pies</p>
@@ -38,7 +38,7 @@ const Savory = ({history}) => {
                 : error ? <Message variant='danger'>{error}</Message>
                     :
                     <div>
-                        <Row className='home-screen-row'>
+                        <Row className='justify-center'>
                             {savoryProducts.map(product => (
                               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                                     <Product product={product} />
