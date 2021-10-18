@@ -41,15 +41,16 @@ main{
   }
 
   .search-box {
+    display: flex;
+    flex-direction: column;
 
-    @media (min-width: 1000px){
-      display: flex;
+    @media (min-width: 1000px) {
       height: 40px;
     }
   
     input {
       margin: 5px 0;
-      width: 180px;
+      // width: 180px;
   
       @media (min-width: 1000px){
         margin: 0 2px;
