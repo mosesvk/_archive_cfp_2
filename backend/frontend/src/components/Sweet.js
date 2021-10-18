@@ -3,6 +3,7 @@ import { Container, Image, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Product from '../components/Product'
 import logoImg from '../images/cfp-cover-1.png'
+import { Link } from 'react-router-dom'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
@@ -26,6 +27,7 @@ const Sweet = ({ history }) => {
   return (
     <Container className='sweet-container'>
       <Row>
+        <Link to='/' className='btn btn-light my-3'>Go Back</Link>
         {/* <Col md={4}>
           <Image src={logoImg} className='logo-img'/>
         </Col> */}

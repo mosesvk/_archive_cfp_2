@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Product from '../components/Product'
 import logoImg from '../images/cfp-cover-1.png'
+import { Link } from 'react-router-dom'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
@@ -26,6 +27,7 @@ const Savory = ({history}) => {
   return (
     <Container className='savory-container'>
       <Row className='justify-center'>
+        <Link to='/' className='btn btn-light my-3'>Go Back</Link>
         {/* <Col md={4}>
           <Image src={logoImg} className='logo-img'/>
         </Col> */}
