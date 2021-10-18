@@ -26,12 +26,15 @@ main{
   font-size: 1rem;
   background-color: $secondary;
 
-  .nav-logo {
+  #nav-logo {
     font-family: 'Fugaz One'!important;
     text-transform: lowercase;
     font-size: 1.75rem!important;
   
-  
+    @media (max-width: 600px){
+      display: none;
+      padding: 1rem 0;
+    }
     @media (min-width: 1600px){
       font-size: 3rem!important;
     }

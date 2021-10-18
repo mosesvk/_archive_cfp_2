@@ -25,7 +25,7 @@ const Header = ({history}) => {
       >
         <Container className='container'>
           <LinkContainer to="/">
-            <Navbar.Brand className='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
+            <Navbar.Brand id='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
