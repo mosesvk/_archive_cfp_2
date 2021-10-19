@@ -38,11 +38,13 @@ main{
     @media (min-width: 1600px){
       font-size: 3rem!important;
     }
-  }
+
+  } // #nav-logo
 
   .search-box {
     display: flex;
     flex-direction: column;
+
     @media (min-width: 600px) {
       flex-direction: row;
     }
@@ -65,7 +67,8 @@ main{
         margin: 0!important;
       }
     }
-  }
+
+  } // .search-box
 
   .navbar-collapse {
     justify-content: space-between;
