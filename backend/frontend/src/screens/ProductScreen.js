@@ -219,9 +219,7 @@ function ProductScreen({ match, history }) {
                     )
 
             }
-
-
-        </div >
+        </div>
     )
 }
 
