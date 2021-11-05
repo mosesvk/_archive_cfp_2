@@ -1,9 +1,17 @@
 import React from 'react'
 import { Container, Image, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import Loader from '../components/Loader'
+import Message from '../components/Message'
+import Paginate from '../components/Paginate'
+
 import logoImg from '../images/cfp-cover-1.png'
 
-const Pizza = () => {
+const Pizza = ({history}) => {
+
+
+  let pizzaProducts = products.filter(elem => elem.category == 'pizza')
+
   return (
     <Container className='pizza-container'>
       <Row>
