@@ -87,8 +87,17 @@ main{
   }
 }
 
-/* Container Global */
+// HomeScreen Main Div 
+.div-homeScreen {
 
+
+  @media (min-width: 1600px) {
+    margin: 0 10rem;
+  }
+}
+
+
+// Container Global 
 .container {
   max-width: none!important;
   padding: 0!important;
