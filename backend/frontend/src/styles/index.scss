@@ -25,7 +25,10 @@ main{
 .nav {
   font-size: 1rem;
   background-color: $secondary;
-  padding: 1rem 0!important;
+  padding: 1rem 5px!important;
+  @media (min-width: 1400px) {
+    padding: 1rem 10rem!important;
+  }
 
   #nav-logo {
     font-family: 'Fugaz One'!important;

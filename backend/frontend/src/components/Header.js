@@ -21,7 +21,7 @@ const Header = ({history}) => {
       <Navbar 
         variant='dark' 
         expand="lg" 
-        className='px-5 nav'
+        className='nav'
       >
         <Container className='container'>
           <LinkContainer to="/">
