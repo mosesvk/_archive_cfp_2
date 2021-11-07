@@ -20,6 +20,10 @@ main{
   h3  {
       padding:1rem 0;
   }
+
+  .row {
+    justify-content: center;
+  }
 }
 
 .nav {
@@ -127,7 +131,7 @@ main{
 .carousel-container {
   background-color: #f8efefdc!important;
   background-size: cover;
-  
+
   .carousel-item {
     // border-radius: 15px;
     height: 550px;
