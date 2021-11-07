@@ -21,7 +21,7 @@ const Sweet = ({ history }) => {
     dispatch(listProducts(keyword));
   }, [dispatch, keyword]);
 
-  let sweetProducts = products.filter((elem) => elem.category == "sweet");
+  let sweetProducts = products.filter((elem) => elem.category === "sweet");
 
   return (
     <Container className="sweet-container">
@@ -29,9 +29,6 @@ const Sweet = ({ history }) => {
         <Link to="/" className=" go-back btn btn-light">
           Go Back
         </Link>
-        {/* <Col md={4}>
-          <Image src={logoImg} className='logo-img'/>
-        </Col> */}
         <Col md={4}>
           <h1>Sweet Flavors</h1>
         </Col>
