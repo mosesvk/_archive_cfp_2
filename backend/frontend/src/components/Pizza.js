@@ -22,7 +22,7 @@ const Pizza = ({history}) => {
     dispatch(listProducts(keyword))
 }, [dispatch, keyword])
 
-  let pizzaProducts = products.filter(elem => elem.category == 'pizza')
+  let pizzaProducts = products.filter(elem => elem.category === 'pizza')
 
   return (
     <Container className='pizza-container'>
