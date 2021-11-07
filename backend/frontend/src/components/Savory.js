@@ -27,11 +27,11 @@ const Savory = ({history}) => {
   return (
     <Container className='savory-container'>
       <Row className='justify-center'>
-        <Link to='/' className='btn btn-light my-3'>Go Back</Link>
+        <Link to='/' className='go-back btn btn-light'>Go Back</Link>
         {/* <Col md={4}>
           <Image src={logoImg} className='logo-img'/>
         </Col> */}
-        <Col md={3}>
+        <Col md={4}>
           <h1>Savory Flavors</h1>
           <p>Try our Savory Fried Pies</p>
         </Col>

@@ -26,13 +26,13 @@ const Sweet = ({ history }) => {
   return (
     <Container className="sweet-container">
       <Row>
-        <Link to="/" className="btn btn-light my-3">
+        <Link to="/" className=" go-back btn btn-light">
           Go Back
         </Link>
         {/* <Col md={4}>
           <Image src={logoImg} className='logo-img'/>
         </Col> */}
-        <Col md={6}>
+        <Col md={4}>
           <h1>Sweet Flavors</h1>
         </Col>
       </Row>
