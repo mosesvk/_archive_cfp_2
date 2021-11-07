@@ -92,8 +92,6 @@ main{
 
 // HomeScreen Main Div 
 .div-homeScreen {
-
-
   @media (min-width: 1600px) {
     margin: 0 10rem;
   }
@@ -104,6 +102,7 @@ main{
 .container {
   max-width: none!important;
   padding: 0!important;
+
 
   a {
     font-size: 15px;
