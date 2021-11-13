@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Container, Image, Row, Col } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Product from "../components/Product";
-import logoImg from "../images/cfp-cover-1.png";
 import { Link } from "react-router-dom";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
