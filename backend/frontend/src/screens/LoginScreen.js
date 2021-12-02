@@ -61,7 +61,7 @@ const LoginScreen = ({location, history}) => {
           variant='primary'
           id='login-btn'
         >
-          Sign In
+          Sign-In
         </Button>
 
       </Form>
