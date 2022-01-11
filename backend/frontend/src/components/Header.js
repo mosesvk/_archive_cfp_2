@@ -16,6 +16,8 @@ const Header = ({history}) => {
     dispatch(logout())
   }
 
+
+
   return (
     <header>
       <Navbar 
@@ -30,7 +32,11 @@ const Header = ({history}) => {
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            {}
+            {showHeader && (
+              <LinkContainer to="/">
+                <Navbar.Brand id='nav-logo'>Cheefa's Fried Pies</Navbar.Brand>
+              </LinkContainer>
+            )}
             <SearchBox />
             <Nav
               // className='ml-auto'
