@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -6,7 +6,7 @@ import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
 
 const Header = ({history}) => {
-
+  const [showHeader, setShowHeader] = useState(false)
   const userLogin = useSelector(state => state.userLogin)
   const { userInfo } = userLogin
 
@@ -30,7 +30,7 @@ const Header = ({history}) => {
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-
+            {}
             <SearchBox />
             <Nav
               // className='ml-auto'
